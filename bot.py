@@ -30,6 +30,8 @@ def bot():
         print('Someone is in')
         msg.body('You have been added to the Mix In')
         responded = True
+    if 'no' in incoming_msg:
+        print('Your reservation has been deleted')
     if not responded:
         msg.body('I only know about famous quotes and cats, sorry!')        
     return str(resp)
