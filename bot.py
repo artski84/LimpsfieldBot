@@ -1,6 +1,7 @@
 import requests
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
+import mysql.connector
 
 app = Flask(__name__)
 
